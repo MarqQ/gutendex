@@ -1,93 +1,3 @@
-https://www.google.com/search?q=gutendex+github&client=firefox-b-d&ei=CaFvY4WPOvnf1sQP5t6H0A8&ved=0ahUKEwjFt4iY4aj7AhX5r5UCHWbvAfoQ4dUDCA4&uact=5&oq=gutendex+github&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIFCAAQogQyBQgAEKIEMgUIABCiBDoKCAAQRxDWBBCwAzoHCAAQgAQQEzoFCCEQoAE6BwgAEIAEEA06CAgAEAUQHhANOggIABAIEB4QDUoECEEYAEoECEYYAFDDBFidFWC8FmgCcAF4AIABiAGIAcsHkgEDMC44mAEAoAEByAEIwAEB&sclient=gws-wiz-serp
-
-https://cleverti.zohorecruit.com/jobs/Careers/382353000011072015/Python-Backend-Engineer-Senior?source=CareerSite
-
-
-python binary search
-
-https://www.moro.technology/company
-
-https://gutendex.com/
-
-https://github.com/garethbjohnson/gutendex
-https://github.com/GabiGlazberg/gutendex
-https://danielhariyanto.github.io/
-
-https://www.udemy.com/course/fastapi-the-complete-course/
-https://www.udemy.com/course/distributed-tasks-demystified-with-celery-python/
-https://www.udemy.com/course/python-microservices/
-
-
-#########################
-https://www.udemy.com/course/construa-poderosas-restful-apis-com-django-rest-framework/
-https://www.udemy.com/course/aprenda-python-django-rest-framework-com-postgresql/
-
-https://github.com/rotsendroid/gutebook
-https://github.com/garethbjohnson/gutendex
-https://github.com/codingwithroby/fastapi-the-complete-course
-
-https://www.youtube.com/watch?v=i5JykvxUk_A
-https://www.youtube.com/watch?v=KVq_DjIfnBo
-
----
-
-https://www.youtube.com/watch?v=1xb7nkgQ75U
-https://www.youtube.com/watch?v=c708Nf0cHrs
-
-https://stackoverflow.com/questions/52259092/what-is-the-drf-way-to-return-a-list-of-items-from-a-third-party-api
-https://www.django-rest-framework.org/community/third-party-packages/
-
-
-########################################
-criar virtual env
-pip install Django==3.2.16
-django-admin startproject gutendex .
-django-admin startapp books
-
-add in settings
-'books',
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-pip install djangorestframework markdown django-filter
-pip freeze > requirements.txt
-
-add in settings
-'django_filters',
-'rest_framework',
-
-# DRF
-32:00
-
-
-
-
-
-###################################
-http://127.0.0.1:8000/api/v1/books/
-http://127.0.0.1:8000/api/v1/reviews/
-
-http://127.0.0.1:8000/admin/books/bookreview/
-
-views.py
-
-listcreteAPIView
-Eu decidi desenvolver utilizando métodos genéricos pois alem de mais praticos, sao implementados sob toda a segurança dos metodos Restful, além disso são utilizados para 80% dos casos. É necessário um entendimento maior devido a abstração mais elevada, mas gera um código mais simples e consiso para manutenção.
-
-Esse método utiliza alguns mixins do DRF, e herada a classe generica do DRF, a genericAPIView, utilizando os metodos get e post internamente na classe.
-
-Normalmente, nos 30% restantes, precisamos sobrescrever os metodos internos get_queryset e get_object da classe generica listcreteAPIView
-
-A sobrescrita de métodos é válida para 30% dos casos.
-
-
-viewset e routers
-
-utilizando os metodos viewsets nas views é possivel usar os routers
-
-
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -349,7 +259,8 @@ dmypy.json
 # Pycharm
 .idea
 
-
+# git
+.gitignore
 
 
 
