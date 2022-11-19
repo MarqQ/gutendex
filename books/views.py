@@ -56,14 +56,17 @@ class BookAPIView(APIView):
 
             book_list = []
 
-            for books in raw_list['results']:
-                book_list.append({
-                    'id': books['id'],
-                    'title': books['title'],
-                    'authors': books['authors'],
-                    'languages': books['languages'],
-                    'download_count': books['download_count'],
-                    'reviews': review_list
-                })
+            for book_review in reviews_json:
+                for book_rated in raw_list['results']:
+                    if book_rated['id'] == book_review['book_id']:
+                        book_list.append({
+                            'id': book_rated['id'],
+                            'title': book_rated['title'],
+                            'authors': book_rated['authors'],
+                            'languages': book_rated['languages'],
+                            'download_count': book_rated['download_count'],
+                            'rating': book_review['rating'],
+                            'review': book_review['review']
+                        })
 
             return Response(book_list)

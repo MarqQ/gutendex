@@ -19,6 +19,14 @@ This project was developed with:
 - python manage.py createsuperuser (if necessary to see the admin panel)
 - python manage.py runserver
 
+###books\urls.py
+
+Here are the API urls:
+- [Basic HTML with some results](http://127.0.0.1:8000)
+- [Fetch all books from gutendex](http://127.0.0.1:8000/api/v1/books/)
+- [Fetch all data from database - reviews](http://127.0.0.1:8000/api/v1/reviews/)
+- [Fetch a unique data from database - review](http://127.0.0.1:8000/api/v1/reviews/1/)
+
 ##Basics about the project
 
 This project is based on [gutendex](https://gutendex.com/), an public API with a collection of book details.
@@ -42,14 +50,6 @@ In the models module, it handles the interaction with the database for the Revie
 
 ###serializers.py
 This is data serialization as well as rating validation.
-
-###books\urls.py
-
-Here are the API urls:
-- [Fetch all books from gutendex](http://127.0.0.1:8000/api/v1/books/)
-- [Fetch all data from database - reviews](http://127.0.0.1:8000/api/v1/reviews/)
-- [Fetch a unique data from database - review](http://127.0.0.1:8000/api/v1/reviews/1/)
-
 
 ###gutendex\urls.py
 
